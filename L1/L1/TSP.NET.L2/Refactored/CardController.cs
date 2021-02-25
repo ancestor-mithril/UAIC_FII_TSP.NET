@@ -1,6 +1,6 @@
 ﻿namespace TSP.NET.L2.Refactored
 {
-    class CardController: IPaymentController
+    class CardController : IPaymentController
     {
         public void Charge(TicketDetails ticketDetails, PaymentDetails payment)
         {
