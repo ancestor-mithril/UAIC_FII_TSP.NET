@@ -1,4 +1,4 @@
-﻿using TSP.NET.L2;
+﻿using TSP.NET.L2.Refactored;
 
 namespace ConsoleApp
 {
