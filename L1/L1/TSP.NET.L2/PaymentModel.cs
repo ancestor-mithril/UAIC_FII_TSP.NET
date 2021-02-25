@@ -1,5 +1,4 @@
-﻿using System;
-using TSP.NET.L2.Refactored;
+﻿using TSP.NET.L2.Refactored;
 
 namespace TSP.NET.L2
 {
