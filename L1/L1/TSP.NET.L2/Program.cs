@@ -9,7 +9,7 @@
             PaymentDetails payment = new PaymentDetails(PaymentMethod.Cash);
 
             PaymentModel pM = new PaymentModel();
-            pM.BuyTicket(ticket, payment, null);
+            pM.BuyTicket(ticket, payment);
         }
     }
 }

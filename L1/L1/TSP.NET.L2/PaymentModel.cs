@@ -6,7 +6,7 @@ namespace TSP.NET.L2
 
     public class PaymentModel
     {
-        public void BuyTicket(TicketDetails ticket, PaymentDetails payment, Action onPayChangeToMobilePhone)
+        public void BuyTicket(TicketDetails ticket, PaymentDetails payment)
         {
             IPaymentController paymentControler;
 
