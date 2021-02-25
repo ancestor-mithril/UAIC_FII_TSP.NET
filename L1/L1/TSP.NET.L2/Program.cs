@@ -1,27 +1,15 @@
-﻿using System;
-
-
-namespace TSP.NET.L2
+﻿namespace TSP.NET.L2
 {
     class Program
     {
         public static void Main()
         {
-            Console.WriteLine("da");
-            TicketDetails ticket = new TicketDetails();
-            ticket.Price = 1000m;
+            TicketDetails ticket = new TicketDetails(1000m);
+
+            PaymentDetails payment = new PaymentDetails(PaymentMethod.Cash);
+
             PaymentModel pM = new PaymentModel();
-            PaymentDetails payment = new PaymentDetails();
-            payment.Method = PaymentMethod.CreditCard;
-            Action action = null;
-            
-
-            Console.WriteLine("Hello World!");
-            Console.WriteLine(ticket.Price);
-
-            
-            pM.BuyTicket(ticket, payment, action);
-            Console.WriteLine("a");
+            pM.BuyTicket(ticket, payment, null);
         }
     }
 }
