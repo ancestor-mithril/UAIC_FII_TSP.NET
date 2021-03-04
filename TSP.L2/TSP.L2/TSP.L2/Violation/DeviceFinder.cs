@@ -8,7 +8,6 @@ namespace SOLID.OCP.Violation
         public string FindDevice(DeviceModel model)
         {
             SerialPort port = new SerialPort();
-            //TODO: modify
             switch (model)
             {
                 case DeviceModel.BillAccepterCashCode:

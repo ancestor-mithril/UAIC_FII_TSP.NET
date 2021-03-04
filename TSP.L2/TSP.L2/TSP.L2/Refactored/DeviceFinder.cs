@@ -10,6 +10,7 @@ namespace TSP.L2.Refactored
         private readonly Dictionary<DeviceModel, ISerialPortFinder> portFinder;
         public DeviceFinder()
         {
+            portFinder = new Dictionary<DeviceModel, ISerialPortFinder>();
             portFinder.Add(DeviceModel.BillAccepterCashCode, new PortFinderCashCode());
             portFinder.Add(DeviceModel.BillDispenserEcdm, new PortFinderEcdm());
             portFinder.Add(DeviceModel.CoinAccepterNri, new PortFinderNri());

@@ -11,8 +11,9 @@ namespace TSP.L2.Refactored
     {
         private static readonly Dictionary<BankTerminalModel, Func<IBankTerminal>> bankTerminals;
 
-        public BankTerminalFactory()
+        static BankTerminalFactory()
         {
+            bankTerminals = new Dictionary<BankTerminalModel, Func<IBankTerminal>>();
             bankTerminals.Add(BankTerminalModel.Brp, () => new BrpTerminal());
             bankTerminals.Add(BankTerminalModel.Dcp, () => new DcpTerminal());
         }
