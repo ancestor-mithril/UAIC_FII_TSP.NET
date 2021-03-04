@@ -21,22 +21,11 @@ namespace TSP.L2.Refactored
         {
             if (portFinder.ContainsKey(model))
             {
-                var port = portFinder[model].FindPort();
-                return Find(port);
+                return portFinder[model].FindPort();
             }
             throw new ArgumentException($"Unknown model: {model}.");
         }
 
-        private string Find(SerialPort port)
-        {
-            string[] names = SerialPort.GetPortNames();
-            foreach (string name in names)
-            {
-                port.Write("special code");
-                if (port.ReadByte() == 0)
-                    return name;
-            }
-            return null;
-        }
+
     }
 }

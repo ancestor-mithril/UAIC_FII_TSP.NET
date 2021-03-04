@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TSP.L2", "TSP.L2\TSP.L2.csproj", "{FF50E5B3-7A83-4951-A5B7-6637230FD923}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2", "Lab2\Lab2.csproj", "{6D193A29-1DA8-4575-A436-B70631760108}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF50E5B3-7A83-4951-A5B7-6637230FD923} = {FF50E5B3-7A83-4951-A5B7-6637230FD923}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
