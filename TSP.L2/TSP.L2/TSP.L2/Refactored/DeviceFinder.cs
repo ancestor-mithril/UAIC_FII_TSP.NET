@@ -21,7 +21,7 @@ namespace TSP.L2.Refactored
         {
             if (portFinder.ContainsKey(model))
             {
-                return portFinder[model].FindPort();
+                return portFinder[model].Find();
             }
             throw new ArgumentException($"Unknown model: {model}.");
         }

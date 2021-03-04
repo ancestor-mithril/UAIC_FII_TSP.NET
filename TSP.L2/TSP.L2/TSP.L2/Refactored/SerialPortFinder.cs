@@ -4,7 +4,7 @@ namespace TSP.L2.Refactored
 {
     interface ISerialPortFinder
     {
-        string FindPort();
+        string Find();
     }
 
     public abstract class SerialPortFinder : ISerialPortFinder
@@ -18,11 +18,8 @@ namespace TSP.L2.Refactored
             port.Parity = parity;
             port.Handshake = handshake;
         }
-        public string FindPort()
-        {
-            return Find(port);
-        }
-        public string Find(SerialPort port)
+
+        public string Find()
         {
             string[] names = SerialPort.GetPortNames();
             foreach (string name in names)
